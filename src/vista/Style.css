@@ -1,0 +1,33 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.label{
+	-fx-background-color: black;
+	-fx-text-fill: white;
+}
+
+.btn{
+	-fx-border-color:  #d6d6d6;
+    -fx-border-width: 0.2;
+    -fx-border-radius: 5 5 5 5;
+}
+
+.numbers{
+	-fx-background-color: #4d4d4c;
+	-fx-text-fill: white;
+}
+
+.rigth_buttons{
+	-fx-background-color: #e7b011;
+	-fx-border-color: #323232;
+	-fx-border-width: 0.2;
+}
+
+.ac{
+	-fx-background-color: #bc3d22;
+    -fx-font-size: 24px;
+	/*-fx-text-fill: white; cambia de color el texto*/
+}
+
+.rpp{
+	-fx-background-color: #a0a09f;
+}

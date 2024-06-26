@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculador.CLalculadoraFXRSVController">
+   <children>
+      <AnchorPane prefHeight="460.0" prefWidth="330.0" style="-fx-background-color: black;">
+         <children>
+            <ImageView fitHeight="25.0" fitWidth="37.0" layoutX="253.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="57.0" AnchorPane.topAnchor="1.0">
+               <image>
+                  <Image url="@../img/cropped.jpg" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <GridPane prefHeight="279.0" prefWidth="320.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" onAction="#borrar" prefHeight="60.0" prefWidth="80.0" stylesheets="@Style.css" text="AC">
+               <font>
+                  <Font size="28.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="ac" />
+               </styleClass>
+            </Button>
+            <Button layoutX="10.0" layoutY="26.0" mnemonicParsing="false" onAction="#raiz" prefHeight="60.0" prefWidth="100.0" stylesheets="@Style.css" text="√" GridPane.columnIndex="1">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="rpp" />
+               </styleClass>
+            </Button>
+            <Button layoutX="90.0" layoutY="26.0" mnemonicParsing="false" onAction="#igual" prefHeight="60.0" prefWidth="100.0" stylesheets="@Style.css" text="=" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="rigth_buttons" />
+               </styleClass>
+            </Button>
+            <Button layoutX="250.0" layoutY="249.0" mnemonicParsing="false" onAction="#buttons" prefHeight="60.0" prefWidth="100.0" stylesheets="@Style.css" text="/" GridPane.columnIndex="3">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="rigth_buttons" />
+               </styleClass>
+            </Button>
+            <Button layoutX="250.0" layoutY="26.0" mnemonicParsing="false" onAction="#porcentaje" prefHeight="60.0" prefWidth="100.0" stylesheets="@Style.css" text="\%" GridPane.columnIndex="2">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="rpp" />
+               </styleClass>
+            </Button>
+            <Button layoutX="170.0" layoutY="26.0" mnemonicParsing="false" onAction="#buttons" prefHeight="60.0" prefWidth="200.0" stylesheets="@Style.css" text="0" GridPane.columnSpan="2" GridPane.rowIndex="4">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="numbers" />
+               </styleClass>
+            </Button>
+            <Button layoutX="10.0" layoutY="249.0" mnemonicParsing="false" onAction="#coma" prefHeight="60.0" prefWidth="100.0" stylesheets="@Style.css" text="." GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="rpp" />
+               </styleClass>
+            </Button>
+            <Button layoutX="170.0" layoutY="249.0" mnemonicParsing="false" onAction="#buttons" prefHeight="60.0" prefWidth="100.0" stylesheets="@Style.css" text="7" GridPane.rowIndex="1">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="numbers" />
+               </styleClass>
+            </Button>
+            <Button layoutX="10.0" layoutY="82.0" mnemonicParsing="false" onAction="#buttons" prefHeight="60.0" prefWidth="100.0" stylesheets="@Style.css" text="4" GridPane.rowIndex="2">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="numbers" />
+               </styleClass>
+            </Button>
+            <Button layoutX="10.0" layoutY="138.0" mnemonicParsing="false" onAction="#buttons" prefHeight="60.0" prefWidth="100.0" stylesheets="@Style.css" text="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="numbers" />
+               </styleClass>
+            </Button>
+            <Button layoutX="10.0" layoutY="194.0" mnemonicParsing="false" onAction="#buttons" prefHeight="60.0" prefWidth="100.0" stylesheets="@Style.css" text="x" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="rigth_buttons" />
+               </styleClass>
+            </Button>
+            <Button layoutX="250.0" layoutY="82.0" mnemonicParsing="false" onAction="#buttons" prefHeight="60.0" prefWidth="100.0" stylesheets="@Style.css" text="8" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="numbers" />
+               </styleClass>
+            </Button>
+            <Button layoutX="90.0" layoutY="82.0" mnemonicParsing="false" onAction="#buttons" prefHeight="60.0" prefWidth="100.0" stylesheets="@Style.css" text="9" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="numbers" />
+               </styleClass>
+            </Button>
+            <Button layoutX="170.0" layoutY="82.0" mnemonicParsing="false" onAction="#buttons" prefHeight="60.0" prefWidth="100.0" stylesheets="@Style.css" text="5" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="numbers" />
+               </styleClass>
+            </Button>
+            <Button layoutX="90.0" layoutY="138.0" mnemonicParsing="false" onAction="#buttons" prefHeight="60.0" prefWidth="100.0" stylesheets="@Style.css" text="6" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="numbers" />
+               </styleClass>
+            </Button>
+            <Button layoutX="170.0" layoutY="138.0" mnemonicParsing="false" onAction="#buttons" prefHeight="60.0" prefWidth="100.0" stylesheets="@Style.css" text="2" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="numbers" />
+               </styleClass>
+            </Button>
+            <Button layoutX="90.0" layoutY="194.0" mnemonicParsing="false" onAction="#buttons" prefHeight="60.0" prefWidth="100.0" stylesheets="@Style.css" text="3" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="numbers" />
+               </styleClass>
+            </Button>
+            <Button layoutX="170.0" layoutY="194.0" mnemonicParsing="false" onAction="#buttons" prefHeight="60.0" prefWidth="100.0" stylesheets="@Style.css" text="-" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="rigth_buttons" />
+               </styleClass>
+            </Button>
+            <Button layoutX="250.0" layoutY="138.0" mnemonicParsing="false" onAction="#buttons" prefHeight="60.0" prefWidth="100.0" stylesheets="@Style.css" text="+" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="rigth_buttons" />
+               </styleClass>
+            </Button>
+         </children>
+      </GridPane>
+      <TextField id="label" fx:id="display" alignment="BOTTOM_RIGHT" layoutY="65.0" prefHeight="103.0" prefWidth="320.0" styleClass="label" stylesheets="@Style.css" text="0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="65.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </TextField>
+      <Button mnemonicParsing="false" onAction="#exit" styleClass="buttons_closed" stylesheets="@Style.css" text="X" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0" />
+   </children>
+</AnchorPane>
